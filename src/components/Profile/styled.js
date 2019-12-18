@@ -3,6 +3,8 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const ProfileWrapper = styled.section`
   display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #777777;
 `
 
 export const ProfileLink = styled(AniLink)`
@@ -13,6 +15,7 @@ export const ProfileDescription = styled.section`
   display: flex;
   flex-direction: column;
   color: #fff;
+  padding-left: 15px;
 `
 
 export const ProfileAuthor = styled.h1`
