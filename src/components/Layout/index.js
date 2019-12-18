@@ -1,26 +1,19 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { TransitionPortal } from "gatsby-plugin-transition-link";
 
 import GlobalStyles from '../../styles/global'
 import Sidebar from '../Sidebar'
 import * as S from './styled'
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <S.LayoutWrapper>
       <GlobalStyles />
-      <Sidebar />
+      <TransitionPortal level="top">
+        <Sidebar />
+      </TransitionPortal>
       <S.LayoutMain>
         {children}
       </S.LayoutMain>
