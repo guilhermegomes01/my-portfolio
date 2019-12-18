@@ -6,6 +6,6 @@ export const LayoutWrapper = styled.section`
 
 export const LayoutMain = styled.section`
   min-height: 100vh;
-  margin-left: 500px;
+  padding-left: 530px;
   width: 100%;
 `
