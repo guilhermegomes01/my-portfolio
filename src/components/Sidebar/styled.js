@@ -3,7 +3,9 @@ import styled from 'styled-components'
 export const SidebarWrapper = styled.aside`
   height: 100vh;
   position: fixed;
-  margin: 70px 100px 0;
+  padding: 70px 100px 0;
+  width: 20rem;
+  background-color: #242424;
 `
 
 export const SidebarTop = styled.section`
