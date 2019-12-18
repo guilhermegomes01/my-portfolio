@@ -9,7 +9,11 @@ const Items = [
   },
   {
     label: "Faculdade",
-    name: "IFPE (cursando) Tecnologia em Análise e Desenvolvimento de Sistemas"
+    name: "IFPE (cursando)"
+  },
+  {
+    label: "Faculdade",
+    name: "Tecnologia em Análise e Desenvolvimento de Sistemas"
   }
 ]
 

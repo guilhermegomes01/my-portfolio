@@ -11,8 +11,8 @@ const About = () => (
       // const Name = [item.name]
       
       return (
-        <S.AboutList key={index}>
-          <S.IconWrapper>
+        <S.AboutList className="list-about" key={index}>
+          <S.IconWrapper className="icon-about">
             <Icon />
           </S.IconWrapper>
           <S.AboutName>
