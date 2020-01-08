@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
