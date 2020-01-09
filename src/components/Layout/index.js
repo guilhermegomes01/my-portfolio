@@ -11,9 +11,9 @@ const Layout = ({ children }) => {
   return (
     <S.LayoutWrapper>
       <GlobalStyles />
-      <TransitionPortal level="top">
+      {/* <TransitionPortal level="top"> */}
         <Sidebar />
-      </TransitionPortal>
+      {/* </TransitionPortal> */}
       <S.LayoutMain>
         {children}
       </S.LayoutMain>
