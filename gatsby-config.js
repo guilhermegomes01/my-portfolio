@@ -4,7 +4,7 @@ module.exports = {
     position: `Dev. Front-end`,
     description: `Este é o meu portfólio desenvolvido com o framework GatsbyJS`,
     author: `Guilherme Gomes`,
-    siteUrl: `https://guilhermegomes.netlify.com`
+    siteUrl: `https://guilhermegomes.netlify.com`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -16,6 +16,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: `${__dirname}/src/images/svg-icons`, // See below to configure properly
+        },
       },
     },
     `gatsby-transformer-sharp`,
