@@ -9,7 +9,7 @@ const MenuLinks = () => (
       {links.map((link, index) => {
         return (
           <S.MenuLinksItem key={index}>
-            <S.MenuLinksLink to={link.url}>
+            <S.MenuLinksLink activeClassName="actived" to={link.url}>
               {link.label}
             </S.MenuLinksLink>
           </S.MenuLinksItem>
