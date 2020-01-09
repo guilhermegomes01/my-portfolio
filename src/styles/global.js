@@ -34,7 +34,8 @@ body {
     line-height: 1;
     background: #242424;
     font-size: 100%;
-    font-family: "Quicksand", sans-serif, Roboto, "Segoe UI", Helvetica, Arial
+    font-family: "Quicksand", sans-serif, Roboto, "Segoe UI", Helvetica, Arial;
+	color: #A5A5A5;
 }
 ol, ul {
 	list-style: none;
