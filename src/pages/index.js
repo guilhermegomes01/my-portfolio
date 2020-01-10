@@ -6,13 +6,13 @@ import Portfolio from "../components/Portfolio"
 import Header from "../components/Header"
 
 const IndexPage = () => (
-  <>
+    <>
     <Header />
     <Layout>
       <SEO title="Home" />
       <Portfolio />
     </Layout>
-  </>
+    </>
 )
 
 export default IndexPage
