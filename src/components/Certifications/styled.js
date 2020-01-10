@@ -1,6 +1,14 @@
 import styled from "styled-components"
+import media from 'styled-media-query'
 
-export const CertificationsWrapper = styled.section``
+export const CertificationsWrapper = styled.section`
+    ${media.lessThan("991.98px")`
+      padding-bottom: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    `}
+`
 
 export const CertificationsList = styled.ul`
   &.completed {
@@ -12,6 +20,12 @@ export const CertificationsList = styled.ul`
   &.ongoing {
     margin-top: 20px;
   }
+
+  ${media.lessThan("991.98px")`
+      width: 17rem;
+      margin: 0 auto;
+      padding-bottom: 80px;
+  `}
 `
 
 export const CertificationsItem = styled.li`
@@ -49,6 +63,14 @@ export const CertificationsItem = styled.li`
   .plataform-name {
     padding-left: 5px;
   }
+
+  ${media.lessThan("991.98px")`
+    display: -webkit-box;
+    
+    .plataform-name {
+      padding-left: 0px;
+    }
+  `}
 `
 
 export const CertificationsSubtitle = styled.ul`
@@ -58,6 +80,10 @@ export const CertificationsSubtitle = styled.ul`
   padding: 6px 15px;
   color: #fff;
   margin-top: 150px;
+
+  ${media.lessThan("991.98px")`
+    margin-top: 50px;
+  `}
 `
 
 export const CertificationsSubtitleItem = styled.li`

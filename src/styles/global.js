@@ -53,13 +53,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-body > section:last-child > div {
-	${media.lessThan("991.98px")`
-    	position: absolute !important;
-		left: 50% !important;
-  	`}
-}
 `
 
 export default GlobalStyles

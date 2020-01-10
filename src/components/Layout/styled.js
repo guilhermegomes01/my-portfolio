@@ -9,7 +9,6 @@ export const LayoutWrapper = styled.section`
 
   ${media.lessThan("991.98px")`
     flex-direction: column;
-    margin-top: 260px;
     padding: 0;
   `}
 `

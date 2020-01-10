@@ -1,7 +1,14 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const SkillsetWrapper = styled.section`
     color: #fff;
+
+    ${media.lessThan("991.98px")`
+        width: 17rem;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    `}
 `
 
 export const SkillsetSubtitle = styled.h3`

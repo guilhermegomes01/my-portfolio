@@ -1,11 +1,15 @@
-import styled from 'styled-components'
-import Img from 'gatsby-image'
+import styled from "styled-components"
+import media from "styled-media-query"
+import Img from "gatsby-image"
 
-export const PortfolioWrapper = styled.section`
-`
+export const PortfolioWrapper = styled.section``
 
 export const PortfolioFilter = styled.ul`
   margin-top: 50px;
+
+  ${media.lessThan("991.98px")`
+    display: none;
+  `}
 `
 
 export const PortfolioFilterItem = styled.li`
@@ -19,34 +23,44 @@ export const PortfolioFilterItem = styled.li`
   cursor: pointer;
 
   &.actived {
-    background: #A5A5A5;
+    background: #a5a5a5;
     color: #242424;
   }
 `
 
 export const PortfolioList = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  ${media.lessThan("991.98px")`
+    justify-content: center;
+  `}
 `
 
 export const PortfolioItems = styled.div`
   margin-bottom: 40px;
+
+  ${media.lessThan("991.98px")`
+    &:last-child {
+      margin-bottom: 70px;
+    }
+  `}
 `
 
 export const PortfolioItemTitle = styled.h3`
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 6px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 6px;
 `
 
 export const PortfolioType = styled.span`
   text-transform: uppercase;
   color: #242424;
-  background-color: #1EDFD5;
+  background-color: #1edfd5;
   border-radius: 3px;
   padding: 4px 9px;
   font-size: 12px;

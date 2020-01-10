@@ -10,13 +10,7 @@ export const SidebarWrapper = styled.aside`
   margin-top: 70px;
 
   ${media.lessThan("991.98px")`
-    padding: 0;
-    width: 17rem;
-    position: inherit;
-    height: auto;
-    background: transparent;
-    margin: 0;
-    transform: translate(-50%)
+    display: none;
   `}
 `
 

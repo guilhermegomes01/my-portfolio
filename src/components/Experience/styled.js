@@ -1,12 +1,20 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const ExperienceWrapper = styled.section`
-
+    ${media.lessThan("991.98px")`
+        padding-bottom: 70px;
+    `}
 `
 
 export const ExperienceList = styled.div`
     margin-top: 50px;
     color: #fff;
+
+    ${media.lessThan("991.98px")`
+        width: 17rem;
+        margin: 0 auto;
+    `}
 `
 
 export const ExperienceItem = styled.div`

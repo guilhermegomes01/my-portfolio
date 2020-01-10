@@ -4,6 +4,8 @@ import { TransitionPortal } from "gatsby-plugin-transition-link";
 
 import GlobalStyles from '../../styles/global'
 import Sidebar from '../Sidebar'
+import SidebarMobile from '../SidebarMobile'
+import MenuMobile from '../MenuMobile'
 import * as S from './styled'
 
 const Layout = ({ children }) => {
@@ -11,12 +13,17 @@ const Layout = ({ children }) => {
   return (
     <S.LayoutWrapper>
       <GlobalStyles />
-      <TransitionPortal level="top">
+      <TransitionPortal>
         <Sidebar />
       </TransitionPortal>
+      <SidebarMobile />
       <S.LayoutMain>
         {children}
       </S.LayoutMain>
+      <TransitionPortal level="top">
+        <MenuMobile />
+      </TransitionPortal>
+  
     </S.LayoutWrapper>
   )
 }
