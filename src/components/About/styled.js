@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const AboutWrapper = styled.ul`
   list-style: none;
@@ -15,6 +16,11 @@ export const AboutList = styled.li`
   &.list-about:last-child .icon-about {
     visibility: hidden;
   }
+
+  ${media.lessThan("991.98px")`
+    font-size: 14px;
+    margin-top: 0;
+  `}
 `
 
 export const IconWrapper = styled.div`
