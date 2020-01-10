@@ -5,6 +5,7 @@ import Icon from "../../images/svg-icons/surface1.svg"
 import * as S from "./styled"
 import sites from "./content"
 import links from "../MenuLinks/content"
+import PageTitle from '../PageTitle'
 
 export const squareImage = graphql`
   fragment squareImage on File {
@@ -21,7 +22,7 @@ const Portfolio = () => {
   const [ecommerce, setEcommerce] = useState(true)
 
   /* Imagens */
-  const { veneza, cca, melhorcom, novoNascer } = useStaticQuery(graphql`
+  const { veneza, cca, melhorcom, novoNascer, agenciaCosmica } = useStaticQuery(graphql`
     query {
       veneza: file(relativePath: { eq: "portfolio/venezawaterpark.png" }) {
         ...squareImage
@@ -35,17 +36,20 @@ const Portfolio = () => {
       novoNascer: file(relativePath: { eq: "portfolio/novonascer.png" }) {
         ...squareImage
       }
+      agenciaCosmica: file(relativePath: { eq: "portfolio/agenciacosmica.png" }) {
+        ...squareImage
+      }
     }
   `)
 
-  const imgs = { veneza, cca, melhorcom, novoNascer }
+  const imgs = { veneza, cca, melhorcom, novoNascer, agenciaCosmica }
 
   return (
     <S.PortfolioWrapper>
-      <S.PortfolioTitle>
+      <PageTitle>
         <Icon className="icon-title" />
         <h2 className="page-title">{links[0].label}</h2>
-      </S.PortfolioTitle>
+      </PageTitle>
       <S.PortfolioFilter>
         <S.PortfolioFilterItem
           className={institucional && ecommerce && "actived"}
