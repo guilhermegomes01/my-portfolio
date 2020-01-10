@@ -18,7 +18,12 @@ const sites = [
         title: "Novo Nascer",
         type: "Institucional",
         name: "novoNascer"
-    } 
+    },
+    {
+        title: "Agência Cósmica",
+        type: "Institucional",
+        name: 'agenciaCosmica'
+    }
 ]
 
 
