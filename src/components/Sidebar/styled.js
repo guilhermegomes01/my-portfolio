@@ -12,6 +12,14 @@ export const SidebarWrapper = styled.aside`
   ${media.lessThan("991.98px")`
     display: none;
   `}
+
+  ${media.greaterThan("1470px")`
+    left: 7%;
+  `}
+
+  ${media.greaterThan("1660px")`
+    left: 12%;
+  `}
 `
 
 export const SidebarTop = styled.section`

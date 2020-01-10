@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 export const SidebarMobWrapper = styled.aside`
+  display: none;
+  
   ${media.lessThan("991.98px")`
     padding: 0;
     width: 17rem;
