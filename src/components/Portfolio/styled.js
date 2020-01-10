@@ -4,21 +4,6 @@ import Img from 'gatsby-image'
 export const PortfolioWrapper = styled.section`
 `
 
-export const PortfolioTitle = styled.section`
-  display: flex;
-  align-items: center;
-
-  h2 {
-    font-size: 35px;
-    text-transform: uppercase;
-  }
-
-  svg {
-    width: 28px;
-    margin-right: 15px;
-  }
-`
-
 export const PortfolioFilter = styled.ul`
   margin-top: 50px;
 `
@@ -69,7 +54,7 @@ export const PortfolioType = styled.span`
 
 export const ImagensWrapper = styled(Img)`
   border-radius: 7px;
-  width: 290px;
+  width: 280px;
   height: auto;
   margin-top: 15px;
 `
