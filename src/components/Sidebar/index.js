@@ -6,7 +6,7 @@ import * as S from './styled'
 import MenuLinks from '../MenuLinks'
 
 const Sidebar = () => (
-  <S.SidebarWrapper>
+  <S.SidebarWrapper className="sidebar-container">
     <S.SidebarTop>
       <Profile />
       <About />

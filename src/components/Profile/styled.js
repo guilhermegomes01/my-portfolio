@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const ProfileWrapper = styled.section`
@@ -22,10 +23,18 @@ export const ProfileAuthor = styled.h1`
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+
+  ${media.lessThan("991.98px")`
+    font-size: 14px;
+  `}
 `
 
 export const ProfilePosition = styled.h2`
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
+
+  ${media.lessThan("991.98px")`
+    font-size: 14px;
+  `}
 `

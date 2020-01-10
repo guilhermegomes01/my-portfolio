@@ -5,7 +5,7 @@ const links = [
     },
     {
         label: "Experiência",
-        url: "/experiencia/"
+        url: "/experiencia"
     },
     {
         label: "Skillset",
