@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import media from 'styled-media-query'
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -51,6 +52,13 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+body > section:last-child > div {
+	${media.lessThan("991.98px")`
+    	position: absolute !important;
+		left: 50% !important;
+  	`}
 }
 `
 
