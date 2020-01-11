@@ -8,6 +8,7 @@ export const PageTitle = styled.section`
   h2 {
     font-size: 35px;
     text-transform: uppercase;
+    color: #A5A5A5;
   }
 
   svg {
@@ -17,18 +18,16 @@ export const PageTitle = styled.section`
 
   ${media.lessThan("991.98px")`
     justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    width: 17rem;
+    margin: 25px auto;
+
+    h2 {
+      text-align: left;
+      width: 100%;
+    }
 
     svg {
       display: none;
     }
-  `}
-
-  ${media.lessThan("small")`
-    h2 {
-      text-align: left;
-    }
-    
   `}
 `

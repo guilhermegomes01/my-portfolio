@@ -11,4 +11,9 @@ export const AvatarWrapper = styled(Img)`
     width: 60px;
     height: auto;
   `}
+
+  ${media.between("992px", "1199.98px")`
+    width: 70px;
+    height: auto;
+  `}
 `

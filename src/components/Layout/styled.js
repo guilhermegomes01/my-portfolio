@@ -23,4 +23,9 @@ export const LayoutMain = styled.section`
     padding: 0;
     min-height: auto;
   `}
+
+  ${media.between("992px", "1199.98px")`
+    padding-left: 430px;
+    padding-right: 60px;
+  `}
 `

@@ -18,19 +18,19 @@ export const MenuMobList = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+    margin: 15px 0;
     padding-right: 10px;
 `
 
 export const MenuMobItem = styled.li`
     color: #A5A5A5;
     &:nth-child(-n+3) {
-        padding-right: 10px;
+        padding-right: 15px;
         border-right: 1px solid #A5A5A5;
     }
 
     &:nth-child(n+2) {
-        padding-left: 10px;
+        padding-left: 15px;
         border-left: 1px solid #242424;
     }
 `
@@ -38,8 +38,8 @@ export const MenuMobItem = styled.li`
 export const MenuMobLink = styled(AniLink)`
     color: #A5A5A5;
     svg {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         path {
             fill: #A5A5A5;
         }

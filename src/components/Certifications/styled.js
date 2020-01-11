@@ -25,6 +25,7 @@ export const CertificationsList = styled.ul`
       width: 17rem;
       margin: 0 auto;
       padding-bottom: 80px;
+      margin-top: 20px;
   `}
 `
 
@@ -64,11 +65,15 @@ export const CertificationsItem = styled.li`
     padding-left: 5px;
   }
 
-  ${media.lessThan("991.98px")`
+  ${media.lessThan("1225px")`
     display: -webkit-box;
     
     .plataform-name {
       padding-left: 0px;
+    }
+
+    .course-name {
+      padding-right: 0px;
     }
   `}
 `

@@ -34,4 +34,9 @@ export const IconItem = styled.div`
     width: 24px;
     height: 24px;
   `}
+
+  ${media.between("992px", "1199.98px")`
+    width: 25px;
+    height: 25px;
+  `}
 `

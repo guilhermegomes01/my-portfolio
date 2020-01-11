@@ -21,6 +21,10 @@ export const AboutList = styled.li`
     font-size: 14px;
     margin-top: 0;
   `}
+
+  ${media.between("992px", "1199.98px")`
+    font-size: 15px;
+  `}
 `
 
 export const IconWrapper = styled.div`

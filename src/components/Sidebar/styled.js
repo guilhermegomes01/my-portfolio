@@ -13,6 +13,11 @@ export const SidebarWrapper = styled.aside`
     display: none;
   `}
 
+  ${media.between("992px", "1199.98px")`
+    width: 18rem;
+    padding: 0px 70px;
+  `}
+
   ${media.greaterThan("1470px")`
     left: 7%;
   `}

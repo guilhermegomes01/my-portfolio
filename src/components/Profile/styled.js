@@ -27,6 +27,10 @@ export const ProfileAuthor = styled.h1`
   ${media.lessThan("991.98px")`
     font-size: 14px;
   `}
+
+  ${media.between("992px", "1199.98px")`
+    font-size: 14px;
+  `}
 `
 
 export const ProfilePosition = styled.h2`
@@ -35,6 +39,10 @@ export const ProfilePosition = styled.h2`
   text-transform: uppercase;
 
   ${media.lessThan("991.98px")`
+    font-size: 14px;
+  `}
+
+  ${media.between("992px", "1199.98px")`
     font-size: 14px;
   `}
 `
