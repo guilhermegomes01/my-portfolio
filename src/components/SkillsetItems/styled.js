@@ -7,7 +7,7 @@ export const SkillsetWrapper = styled.section`
     ${media.lessThan("991.98px")`
         width: 17rem;
         margin: 0 auto;
-        padding-bottom: 80px;
+        padding-bottom: 100px;
     `}
 `
 

@@ -3,7 +3,7 @@ import media from 'styled-media-query'
 
 export const CertificationsWrapper = styled.section`
     ${media.lessThan("991.98px")`
-      padding-bottom: 70px;
+      padding-bottom: 100px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -87,7 +87,7 @@ export const CertificationsSubtitle = styled.ul`
   margin-top: 150px;
 
   ${media.lessThan("991.98px")`
-    margin-top: 50px;
+    margin-top: 35px;
   `}
 `
 
