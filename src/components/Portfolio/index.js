@@ -87,12 +87,19 @@ const Portfolio = () => {
             <>
               {((institucional && siteInstitucional) ||
                 (ecommerce && siteEcommerce)) && (
+                
                 <S.PortfolioItems key={index}>
-                  <S.PortfolioItemTitle>{site.title}</S.PortfolioItemTitle>
-                  <S.PortfolioType>{site.type}</S.PortfolioType>
-                  <S.ImagensWrapper
-                    fluid={imgs[site.name].childImageSharp.fluid}
-                  />
+                  <S.PortfolioLink href={site.url} target="_blank" title={site.title}>
+                    <S.PortfolioItemTitle>{site.title}</S.PortfolioItemTitle>
+                    <S.PortfolioType>{site.type}</S.PortfolioType>
+                    <S.ImagensWrapper
+                      fluid={imgs[site.name].childImageSharp.fluid}
+                    />
+
+                  </S.PortfolioLink>
+                  <S.PortfolioDescription>
+                    {site.description}
+                  </S.PortfolioDescription>
                 </S.PortfolioItems>
               )}
             </>
