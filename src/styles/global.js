@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import "typeface-quicksand"
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -34,7 +35,7 @@ body {
     line-height: 1;
     background: #242424;
     font-size: 100%;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand";
 	color: #A5A5A5;
 }
 ol, ul {

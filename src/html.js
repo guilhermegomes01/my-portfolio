@@ -12,7 +12,6 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
-        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" type="font/woff2" crossorigin="anonymous"></link>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
