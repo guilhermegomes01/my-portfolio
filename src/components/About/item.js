@@ -5,7 +5,7 @@ const Items = [
   },
   {
     label: "Email",
-    name: "guilherme@giga.recife.br"
+    name: "contato@guilhermegomes.dev"
   },
   {
     label: "Faculdade",
