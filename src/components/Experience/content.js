@@ -1,6 +1,12 @@
 const jobs = [
     {
-        date: 'Out 2018 - Presente',
+        date: 'Jan 2020 - Presente',
+        company: 'Melhor Comunicação',
+        role: 'Desenvolvedor Front-End Júnior',
+        description: 'Deixei de ser estagiário e virei um desenvolvedor júnior. Atualmente trabalho com metodologias ágeis como Scrum e Kanban e, desenvolvendo aplicações com ReactJS.'
+    },
+    {
+        date: 'Out 2018 - Dez 2019',
         company: 'Melhor Comunicação',
         role: 'Estagiário Front-End',
         description: 'Na Melhor Comunicação eu trabalho no desenvolvimento de sites e sistemas e-commerce com Wordpress. Utilizei Javascript para a criação de algumas funções necessárias para os sites e CSS3 para a estilização. Nesses meses que estou na empresa, mostrei aos desenvolvedores como utilizar o controle de versão com Git e utilizamos o bitbucket para manter os repositórios dos nossas aplicações.'
