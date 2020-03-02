@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import media from 'styled-media-query'
+import media from "styled-media-query"
 
 export const CertificationsWrapper = styled.section`
-    ${media.lessThan("991.98px")`
+  ${media.lessThan("991.98px")`
       padding-bottom: 100px;
       display: flex;
       flex-direction: column;
@@ -15,10 +15,16 @@ export const CertificationsList = styled.ul`
     margin-top: 50px;
     padding-bottom: 10px;
     border-bottom: 0.5px solid #777777;
+    ${media.lessThan("991.98px")`
+      order: 2;
+    `}
   }
 
   &.ongoing {
     margin-top: 20px;
+    ${media.lessThan("991.98px")`
+      order: 3;
+    `}
   }
 
   ${media.lessThan("991.98px")`
@@ -87,7 +93,8 @@ export const CertificationsSubtitle = styled.ul`
   margin-top: 150px;
 
   ${media.lessThan("991.98px")`
-    margin-top: 35px;
+    margin-top: 5px;
+    order: 1;
   `}
 `
 
@@ -107,7 +114,7 @@ export const CertificationsSubtitleItem = styled.li`
   }
 
   &.ongoing {
-      margin-left: 20px;
+    margin-left: 20px;
   }
 
   &.ongoing::before {
