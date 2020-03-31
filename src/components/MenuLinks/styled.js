@@ -15,7 +15,7 @@ export const MenuLinksList = styled.ul`
 export const MenuLinksItem = styled.li`
     margin-bottom: 15px;
 
-    &:nth-child(-n+3)::after {
+    &:nth-child(-n+4)::after {
         content: '';
         background: #777777;
         height: 1px;

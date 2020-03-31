@@ -1,3 +1,5 @@
+//Quando adicionar algo novo, é necessário ir mudar o número do after no styled.js
+
 const links = [
     {
         label: "Portfólio",
@@ -14,6 +16,10 @@ const links = [
     {
         label: "Certificações",
         url: "/certificacoes"
+    },
+    {
+        label: "Casos Covid19",
+        url: "/corona-virus"
     }
 ]
 

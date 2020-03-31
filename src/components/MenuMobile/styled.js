@@ -24,7 +24,7 @@ export const MenuMobList = styled.ul`
 
 export const MenuMobItem = styled.li`
     color: #A5A5A5;
-    &:nth-child(-n+3) {
+    &:nth-child(-n+4) {
         padding-right: 15px;
         border-right: 1px solid #A5A5A5;
     }
