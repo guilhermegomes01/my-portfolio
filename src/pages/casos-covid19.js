@@ -9,7 +9,7 @@ const CasosCovid19 = () => (
   <>
   <Header />
   <Layout>
-    <SEO title="Casos Covid19" />
+    <SEO title="Casos Covid19" image='assets/img/guilherme-icon.png' />
     <CoronaVirus />
   </Layout>
   </>
