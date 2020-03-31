@@ -5,14 +5,14 @@ import SEO from "../components/seo"
 import Header from '../components/Header'
 import CoronaVirus from '../components/CoronaVirus'
 
-const Covid19 = () => (
+const CasosCovid19 = () => (
   <>
   <Header />
   <Layout>
-    <SEO title="Corona Vírus" />
+    <SEO title="Casos Covid19" />
     <CoronaVirus />
   </Layout>
   </>
 )
 
-export default Covid19
+export default CasosCovid19

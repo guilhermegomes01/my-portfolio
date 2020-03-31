@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import Chart from "react-apexcharts"
 import api from "../../services/covid/api"
 import moment from "moment"
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from "recharts"
@@ -47,8 +46,7 @@ const CoronaVirus = () => {
   }, [])
 
   const { uf, state, cases, deaths, suspects, refuses, datetime } = statusPE
-  // const { country, cases, confirmed, deaths, recovered, updated_at } = status;
-  console.log()
+
   return (
     <>
       <TemplateWrapper>
