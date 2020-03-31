@@ -32,7 +32,7 @@ const MenuMobile = () => (
         </S.MenuMobLink>
       </S.MenuMobItem>
       <S.MenuMobItem>
-        <S.MenuMobLink cover direction="top" bg="#242424" duration={0.6} activeClassName="actived" to="/corona-virus">
+        <S.MenuMobLink cover direction="top" bg="#242424" duration={0.6} activeClassName="actived" to="/casos-covid19">
           <Globe />
         </S.MenuMobLink>
       </S.MenuMobItem>

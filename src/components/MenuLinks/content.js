@@ -19,7 +19,7 @@ const links = [
     },
     {
         label: "Casos Covid19",
-        url: "/corona-virus"
+        url: "/casos-covid19"
     }
 ]
 
