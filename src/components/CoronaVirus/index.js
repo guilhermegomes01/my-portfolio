@@ -58,6 +58,14 @@ const CoronaVirus = () => {
         ) : (
           <>
             <TemplateCases
+              title="Casos no Brasil"
+              confirmed={status.cases}
+              deaths={status.deaths}
+              suspects={status.recovered}
+              refuses={status.confirmed}
+              datetime={moment(status.updated_at).format("D/MM/YYYY HH:mm")}
+            />
+            <TemplateCases
               isState
               title="Casos em Pernambuco"
               confirmed={cases}
@@ -65,14 +73,6 @@ const CoronaVirus = () => {
               suspects={suspects}
               refuses={refuses}
               datetime={moment(datetime).format("D/MM/YYYY HH:mm")}
-            />
-            <TemplateCases
-              title="Casos no Brasil"
-              confirmed={status.cases}
-              deaths={status.deaths}
-              suspects={status.recovered}
-              refuses={status.confirmed}
-              datetime={moment(status.updated_at).format("D/MM/YYYY HH:mm")}
             />
           </>
         )}
