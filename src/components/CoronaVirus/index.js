@@ -104,6 +104,10 @@ const CoronaVirus = () => {
         <Tooltip />
       </LineChart> */}
       </TemplateWrapper>
+      <TemplateWrapper>
+
+      <p style={{textAlign: 'center', lineHeight: '23px'}}>Obs.: Os casos por município de um estado pode divergir do total no estado, pois nem sempre as Secretarias divulgam todos os municípios em que aconteceram casos.</p>
+      </TemplateWrapper>
       <TemplateWrapper className="cities">
         {loadingCity ? (
           <TemplateDiv>
@@ -132,6 +136,9 @@ const CoronaVirus = () => {
         <p>
           Em breve: Dados de outros Estados e suas respectivas cidades que
           contenham ao menos 1 caso confirmado.
+        </p>
+        <p>
+          Fonte: Secretária de Saúde Estaduais e Ministério da Saúde
         </p>
       </TemplateFeatures>
     </>
