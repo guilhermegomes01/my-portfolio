@@ -7,7 +7,7 @@ export const TemplateWrapper = styled.section`
 `
 
 export const TemplateItems = styled.section`
-  flex-basis: 49%;
+    flex-basis: 49%;
 `
 
 export const TemplateTitle = styled.h2`

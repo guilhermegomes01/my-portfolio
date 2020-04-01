@@ -5,6 +5,14 @@ export const TemplateWrapper = styled.section`
   display: flex;
   justify-content: space-between;
 
+  &.cities {
+    flex-wrap: wrap;
+  }
+
+  &.first {
+    margin-top: 50px;
+  }
+
   ${media.lessThan("991.98px")`
         width: 17rem;
         margin: 30px auto 0px;
@@ -29,7 +37,8 @@ export const TemplateFeatures = styled.section`
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 40%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     `}
 `
 
