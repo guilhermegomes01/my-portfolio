@@ -10,4 +10,11 @@
 
 Framework utiliado: GatsbyJS
 
+# Dados do Covid19
+## Os dados estão sendo consultados em
+- [COVID-19 Brazil API](http://covid19-brazil-api.now.sh/)
+- [API Dataset covid19 no Brasil.IO](https://brasil.io/home)
+
+Obrigado pela disponibilização das informações.
+
 O README será atualizado em breve.
