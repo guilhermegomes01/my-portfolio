@@ -14,6 +14,7 @@ export const PageTitle = styled.section`
   svg {
     width: 28px;
     margin-right: 15px;
+    color: #1edfd5;
   }
 
   ${media.lessThan("991.98px")`
