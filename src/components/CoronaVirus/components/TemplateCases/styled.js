@@ -12,11 +12,11 @@ export const TemplateItems = styled.section`
 
 export const TemplateTitle = styled.h2`
   text-transform: uppercase;
-  padding: 16px 12px 0px;
+  padding: 16px 12px 8px;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
-  min-height: 40px;
+  min-height: 46px;
   display: flex;
   align-items: center;
   line-height: 23px;
