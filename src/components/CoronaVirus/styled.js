@@ -4,13 +4,18 @@ import media from "styled-media-query"
 export const TemplateWrapper = styled.section`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   &.cities {
     flex-wrap: wrap;
   }
 
   &.first {
-    margin-top: 50px;
+    margin-top: 20px;
+  }
+
+  &.select-state {
+    margin-top: 30px;
   }
 
   ${media.lessThan("991.98px")`
