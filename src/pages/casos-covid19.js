@@ -12,7 +12,7 @@ const CasosCovid19 = () => (
       <SEO
         title="Casos Covid19"
         image="/assets/img/guilherme-icon.png"
-        description="Informações sobre os casos de Covid19 em Pernambuco e suas cidades, e também, no Brasil."
+        description="Informações sobre os casos de Covid19 no Brasil, nos seus estados e respectivas cidades."
       />
       <CoronaVirus />
     </Layout>
