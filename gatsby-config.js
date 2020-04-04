@@ -41,13 +41,6 @@ module.exports = {
       },
     },
     {
-      // Note: this plugin is coded to only work on production
-      resolve: `gatsby-plugin-subscribers`,
-      options: {
-        id: 'eee34de6-a07c-43af-a5ff-dd098d0d2b79',
-      },
-    },
-    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-5P2MMVP",
