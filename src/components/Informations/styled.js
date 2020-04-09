@@ -4,6 +4,20 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const Section = styled.section`
     margin-top: 40px;
+
+    &.button {
+        margin-top: 0px;
+    }
+
+    ${media.lessThan("991.98px")`
+        width: 17rem;
+        margin: 30px auto 90px;
+        flex-direction: column;
+
+        &.button {
+            margin-bottom: 0px;
+        }
+    `}
 `
 
 export const Paragraph = styled.p`
@@ -27,6 +41,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
     line-height: 20px;
+    list-style: circle;
 `
 
 export const Button = styled(AniLink)`
