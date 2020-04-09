@@ -5,18 +5,23 @@ import SEO from "../../components/seo"
 import Header from "../../components/Header"
 import CoronaVirus from "../../components/CoronaVirus"
 
-const CasosCovid19 = () => (
-  <>
-    <Header />
-    <Layout>
-      <SEO
-        title="Casos Covid19"
-        image="/assets/img/guilherme-icon.png"
-        description="Informações sobre os casos de Covid19 no Brasil, nos seus estados e respectivas cidades."
-      />
-      <CoronaVirus />
-    </Layout>
-  </>
-)
+const CasosCovid19 = () => {
+  const title="Casos Covid19";
+  const description = "Informações sobre os casos de Covid19 no Brasil, nos seus estados e respectivas cidades."
+  
+  return (
+    <>
+      <Header />
+      <Layout>
+        <SEO
+          title={title}
+          image="/assets/img/guilherme-icon.png"
+          description={description}
+        />
+        <CoronaVirus title={title} description={description} />
+      </Layout>
+    </>
+  )
+}
 
 export default CasosCovid19
