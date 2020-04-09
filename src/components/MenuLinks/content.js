@@ -7,15 +7,15 @@ const links = [
     },
     {
         label: "Experiência",
-        url: "/experiencia"
+        url: "/experiencia/"
     },
     {
         label: "Skillset",
-        url: "/skillset"
+        url: "/skillset/"
     },
     {
         label: "Certificações",
-        url: "/certificacoes"
+        url: "/certificacoes/"
     },
     {
         label: "Casos Covid19",
