@@ -16,7 +16,7 @@ export const TemplateWrapper = styled.section`
 
 export const TemplateItems = styled.section`
   flex-basis: 100%;
-
+  
   &.half-item {
     flex-basis: 50%;
 
