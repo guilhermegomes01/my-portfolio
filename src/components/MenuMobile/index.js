@@ -1,11 +1,13 @@
 import React from "react"
 
 import * as S from "./styled"
+
+// Icons
 import IconPortfolio from "../../images/svg-icons/surface1.svg"
 import IconExperience from "../../images/svg-icons/briefcase.svg"
 import IconSkillset from "../../images/svg-icons/star.svg"
 import IconCertificate from "../../images/svg-icons/certificate.svg"
-import { Globe } from '@styled-icons/fa-solid/Globe'
+import Globe from "../../images/svg-icons/globe.svg"
 
 
 const MenuMobile = () => (
