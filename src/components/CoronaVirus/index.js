@@ -3,11 +3,11 @@ import React, { useState, useEffect } from "react"
 // External Components
 import { api, apiSecretaria } from "../../services/covid/api"
 import moment from "moment"
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from "recharts"
+// import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from "recharts"
 import {
   FacebookShareButton,
   LinkedinShareButton,
-  TelegramShareButton,
+  // TelegramShareButton,
   TwitterShareButton,
   WhatsappShareButton,
 } from "react-share"
@@ -18,7 +18,7 @@ import { ArrowRight } from "@styled-icons/feather/ArrowRight"
 import {
   FacebookIcon,
   LinkedinIcon,
-  TelegramIcon,
+  // TelegramIcon,
   TwitterIcon,
   WhatsappIcon,
 } from "react-share"
@@ -49,7 +49,6 @@ const CoronaVirus = ({ title, description }) => {
   const [statusPE, setStatusPE] = useState({})
   const [statusMunicipios, setStatusMunicipios] = useState({})
   const [loading, setLoading] = useState(true)
-  const [loadingState, setLoadingState] = useState(true)
   const [loadingCity, setLoadingCity] = useState(true)
 
   async function loadStatusPE(state) {
@@ -81,7 +80,7 @@ const CoronaVirus = ({ title, description }) => {
     setActualState(event.target.value)
   }
 
-  const { uf, state, cases, deaths, suspects, refuses, datetime } = statusPE
+  const { state, cases, deaths, suspects, refuses, datetime } = statusPE
 
   return (
     <>
