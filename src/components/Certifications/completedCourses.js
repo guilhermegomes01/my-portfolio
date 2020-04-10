@@ -12,7 +12,7 @@ const completedCourses = [
         plataform: 'Udemy'
     },
     {
-        name: 'Javascript: Testes Automatizados com Jasmine',
+        name: 'Javascript - Testes Automatizados com Jasmine',
         plataform: 'TreinaWeb'
     },
     {
