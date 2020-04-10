@@ -8,7 +8,7 @@ import Informations from "../../../components/Informations"
 const ImportantInformations = () => (
   <>
     <Header />
-    <Layout>
+    <Layout isCovidSubPage>
       <SEO
         title="Casos Covid19"
         image="/assets/img/guilherme-icon.png"

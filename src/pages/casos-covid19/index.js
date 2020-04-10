@@ -12,7 +12,7 @@ const CasosCovid19 = () => {
   return (
     <>
       <Header />
-      <Layout>
+      <Layout isCovidPage>
         <SEO
           title={title}
           image="/assets/img/guilherme-icon.png"
