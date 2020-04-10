@@ -1,12 +1,16 @@
-import React from 'react'
+import React from "react"
 
-import Profile from '../Profile'
-import About from '../About'
-import * as S from './styled'
-import MenuLinks from '../MenuLinks'
+import Profile from "../Profile"
+import About from "../About"
+import * as S from "./styled"
+import MenuLinks from "../MenuLinks"
 
-const SidebarMobile = () => (
-  <S.SidebarMobWrapper className="sidebar-container">
+const SidebarMobile = ({ isCovidPage, isCovidSubPage }) => (
+  <S.SidebarMobWrapper
+    className={
+      isCovidPage || isCovidSubPage ? "sidebar-container covid-page" : "sidebar-container"
+    }
+  >
     <S.SidebarMobTop>
       <Profile />
       <About />

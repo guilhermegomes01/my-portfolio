@@ -12,6 +12,12 @@ export const SidebarMobWrapper = styled.aside`
     height: auto;
     background: transparent;
     margin: 30px auto 0;
+    
+    &.covid-page {
+      order: 2;
+      margin-top: 0;
+      margin-bottom: 100px;
+    }
   `}
 `
 
@@ -22,5 +28,7 @@ export const SidebarMobTop = styled.section`
 
   ${media.lessThan("991.98px")`
     padding: 25px;
+
+
   `}
 `
