@@ -9,11 +9,6 @@ import MenuMobile from "../MenuMobile"
 import * as S from "./styled"
 
 const Layout = ({ children, isCovidPage, isCovidSubPage }) => {
-  const [covidPage, setCovidPage] = useState(false)
-
-  const WhatPage = page => {
-    setCovidPage(page)
-  }
 
   return (
     <S.LayoutWrapper>
