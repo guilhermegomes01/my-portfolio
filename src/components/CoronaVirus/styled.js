@@ -56,7 +56,7 @@ export const TemplateFeatures = styled.section`
 
   ${media.lessThan("991.98px")`
         width: 17rem;
-        margin: 30px auto 90px;
+        margin: 30px auto 40px;
     `}
 
   ${media.greaterThan("992px")`
