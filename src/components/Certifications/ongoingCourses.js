@@ -1,10 +1,10 @@
 const ongoingCourses = [
     {
-        name: 'Java 13 Completo: Do Zero ao Profissional',
+        name: 'React Native - The Pratical Guide 2020',
         plataform: 'Udemy',
     },
     {
-        name: 'Curso React.JS Ninja - React Completo',
+        name: 'React Avançado: Crie aplicações com NextJS, GraphQL e mais.',
         plataform: 'Udemy',
     },
 ]
