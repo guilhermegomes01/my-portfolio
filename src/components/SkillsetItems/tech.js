@@ -6,6 +6,7 @@ const techs = [
     'Wordpress',
     'Bootstrap 3+',
     'Git',
+    'React Native',
     'React.JS',
     'Gatsby.JS'
 ]
