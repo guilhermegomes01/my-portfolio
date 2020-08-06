@@ -7,6 +7,7 @@ import {
   TemplateItems,
   TemplateItem,
 } from "./styled"
+import FormatedNumber from '../FormatedNumber'
 
 const TemplateCountryAndState = ({
   isState,
@@ -22,17 +23,12 @@ const TemplateCountryAndState = ({
     <TemplateSituation>
       <TemplateWrapper className="items-content">
         <TemplateItems className="half-item">
-          <TemplateItem>Confirmados: {confirmed}</TemplateItem>
-          <TemplateItem>Óbitos: {deaths}</TemplateItem>
+          <FormatedNumber title="Confirmados: " value={confirmed} />
+          <FormatedNumber title="Óbitos: " value={deaths} />
         </TemplateItems>
         <TemplateItems className="half-item">
-          <TemplateItem>
-          {isState ? "Suspeitos: " : "Recuperados: "} {suspects}
-          </TemplateItem>
-          <TemplateItem>
-            {isState ? "Descartados: " : ""}
-            {refuses}
-          </TemplateItem>
+          <FormatedNumber title={isState ? "Suspeitos: " : "Recuperados: "} value={suspects} />
+          <FormatedNumber title={isState ? "Descartados: " : ""} value={refuses} />
         </TemplateItems>
       </TemplateWrapper>
       <TemplateItem />
