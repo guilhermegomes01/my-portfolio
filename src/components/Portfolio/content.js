@@ -1,37 +1,58 @@
 const sites = [
     {
+        title: "Obapet",
+        type: "E-Commerce",
+        url: "https://obapet.com.br/",
+        description: ["᛫React", "᛫Javascript", "᛫Git flow", "᛫Axios", "᛫AWS", "᛫CSS-in-JS"],
+        name: "obapet"
+    }, 
+    {
+        title: "Obapet",
+        type: "Aplicativos",
+        url: "https://play.google.com/store/apps/details?id=com.obapet&hl=pt_BR",
+        description: ["᛫React Native", "᛫Javascript", "᛫Git flow", "᛫Axios"],
+        name: "obapetMobile"
+    }, 
+    {
+        title: "Marcador de Pontos",
+        type: "Aplicativos",
+        url: "https://play.google.com/store/apps/details?id=com.guilhermegomes.marcadordepontos&hl=pt_BR",
+        description: ["᛫React Native", "᛫Javascript", "᛫Expo"],
+        name: "pointsScorer"
+    }, 
+    {
         title: "Veneza Water Park",
         type: "E-Commerce",
         url: "https://venezawaterpark.com.br/",
-        description: "O Veneza é um parque aquático localizado no litoral norte de Pernambuco. É um e-commerce onde é possível fazer a compra de ingressos para ter acesso ao parque.",
+        description: ["᛫Wordpress", "᛫WooCommerce", "᛫Javascript", "᛫CSS", "᛫Bootstrap 4"],
         name: "veneza"
     }, 
     {
         title: "CCA Advogados",
         type: "Institucional",
         url: "https://ccaadvogados.com.br/",
-        description: "CCA é um escritório de advocacia com unidades Recife, São Paulo e Brasília. Com especialistas nas áreas Civil e Empresarial, Administrativo, Tributário e Trabalhista.",
+        description: ["᛫Wordpress", "᛫Javascript", "᛫HTML" ,"᛫CSS", "᛫Bootstrap 4", "᛫PHP"],
         name: "cca"
     },
     {
         title: "Melhor Comunicação",
         type: "Institucional",
         url: "https://melhorcom.com.br/",
-        description: "A Melhor Comunicação é uma Agência que trabalha com grandes clientes e tem diversos caminhos e estratégias para aumentar as suas vendas.",
+        description: ["᛫Wordpress", "᛫Javascript", "᛫HTML","᛫CSS", "᛫Bootstrap 4", "᛫PHP"],
         name: "melhorcom"
     },
     {
         title: "Novo Nascer",
         type: "Institucional",
         url: "https://www.novonascer.com.br/",
-        description: "Novo Nascer é uma clínica hospitalar com uma estrutura adequada para pessoas que precisam de tratamento em Saúde Mental, Dependência Química, entre outros.",
+        description: ["᛫Wordpress", "᛫Javascript", "᛫CSS"],
         name: "novoNascer"
     },
     {
         title: "Agência Cósmica",
         type: "Institucional",
         url: "https://www.agenciacosmica.com.br/",
-        description: "Cósmica é uma Agência que trabalha com Marketing Digital em Recife e oferece serviços como Gestão de Mídias Sociais, Gestão de Anúncios, Criação de Sites, entre outros.",
+        description: ["᛫HTML", "᛫CSS", "᛫Bootstrap 3" ,"᛫jQuery", "᛫Git"],
         name: 'agenciaCosmica'
     }
 ]

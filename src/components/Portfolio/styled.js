@@ -98,8 +98,15 @@ export const ImagensWrapper = styled(Img)`
   `}
 `
 
-export const PortfolioDescription = styled.p`
+export const PortfolioDescription = styled.div`
   color: #fff;
   margin-top: 12px;
-  line-height: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+`
+
+export const Technologies = styled.p`
+  padding: 6px;
+  text-align: center;
 `

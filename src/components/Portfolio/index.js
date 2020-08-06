@@ -20,10 +20,20 @@ export const squareImage = graphql`
 const Portfolio = () => {
   const [institucional, setInstitucional] = useState(true)
   const [ecommerce, setEcommerce] = useState(true)
+  const [mobileApps, setMobileApps] = useState(true);
 
   /* Imagens */
-  const { veneza, cca, melhorcom, novoNascer, agenciaCosmica } = useStaticQuery(graphql`
+  const { pointsScorer, obapetMobile, obapet, veneza, cca, melhorcom, novoNascer, agenciaCosmica } = useStaticQuery(graphql`
     query {
+      pointsScorer: file(relativePath: { eq: "portfolio/points-scorer-mobile.png" }) {
+        ...squareImage
+      }
+      obapetMobile: file(relativePath: { eq: "portfolio/obapet-mobile.png" }) {
+        ...squareImage
+      }
+      obapet: file(relativePath: { eq: "portfolio/obapet.png" }) {
+        ...squareImage
+      }
       veneza: file(relativePath: { eq: "portfolio/venezawaterpark.png" }) {
         ...squareImage
       }
@@ -42,7 +52,7 @@ const Portfolio = () => {
     }
   `)
 
-  const imgs = { veneza, cca, melhorcom, novoNascer, agenciaCosmica }
+  const imgs = { pointsScorer, obapetMobile, obapet, veneza, cca, melhorcom, novoNascer, agenciaCosmica }
 
   return (
     <S.PortfolioWrapper>
@@ -52,41 +62,55 @@ const Portfolio = () => {
       </PageTitle>
       <S.PortfolioFilter>
         <S.PortfolioFilterItem
-          className={institucional && ecommerce && "actived"}
+          className={institucional && ecommerce && mobileApps && "actived"}
           onClick={() => {
             setEcommerce(true)
             setInstitucional(true)
+            setMobileApps(true)
           }}
         >
           Todos
         </S.PortfolioFilterItem>
         <S.PortfolioFilterItem
-          className={institucional && !ecommerce && "actived"}
+          className={institucional && !ecommerce && !mobileApps && "actived"}
           onClick={() => {
             setEcommerce(false)
+            setMobileApps(false)
             setInstitucional(true)
           }}
         >
           Institucional
         </S.PortfolioFilterItem>
         <S.PortfolioFilterItem
-          className={!institucional & ecommerce && "actived"}
+          className={!institucional & ecommerce && !mobileApps && "actived"}
           onClick={() => {
             setInstitucional(false)
+            setMobileApps(false)
             setEcommerce(true)
           }}
         >
           E-Commerce
+        </S.PortfolioFilterItem>
+        <S.PortfolioFilterItem
+          className={!institucional & !ecommerce && mobileApps && "actived"}
+          onClick={() => {
+            setInstitucional(false)
+            setEcommerce(false)
+            setMobileApps(true)
+          }}
+        >
+          Aplicativos
         </S.PortfolioFilterItem>
       </S.PortfolioFilter>
       <S.PortfolioList>
         {sites.map((site, index) => {
           const siteInstitucional = site.type === "Institucional"
           const siteEcommerce = site.type === "E-Commerce"
+          const mobile = site.type === 'Aplicativos'
           return (
             <>
               {((institucional && siteInstitucional) ||
-                (ecommerce && siteEcommerce)) && (
+                (ecommerce && siteEcommerce) || (mobileApps && mobile)) && (
                 
                 <S.PortfolioItems key={index}>
                   <S.PortfolioLink href={site.url} target="_blank" title={site.title}>
@@ -98,7 +122,9 @@ const Portfolio = () => {
 
                   </S.PortfolioLink>
                   <S.PortfolioDescription>
-                    {site.description}
+                    {site.description.map(technology => (
+                      <S.Technologies>{technology}</S.Technologies>
+                    ))}
                   </S.PortfolioDescription>
                 </S.PortfolioItems>
               )}
