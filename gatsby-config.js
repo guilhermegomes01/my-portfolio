@@ -44,11 +44,11 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-5P2MMVP",
-  
+
         // Include GTM in development.
         // Defaults to false meaning GTM will only be loaded in production.
         includeInDevelopment: false,
-  
+
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
         // Defaults to null
@@ -67,6 +67,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        includeInDevelopment: false, // optional parameter to include script in development
+        id: process.env.REACT_APP_HOTJAR_ID,
+        sv: 6,
+      },
+    },
+
     `gatsby-plugin-portal`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
