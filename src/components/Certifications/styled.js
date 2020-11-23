@@ -62,13 +62,17 @@ export const CertificationsItem = styled.li`
     margin-right: 10px;
   }
 
+  .course {
+    line-height: 22px;
+  }
+
   .course-name {
     font-weight: bold;
-    padding-right: 5px;
   }
 
   .plataform-name {
-    padding-left: 5px;
+
+    font-weight: normal;
   }
 
   ${media.lessThan("1225px")`

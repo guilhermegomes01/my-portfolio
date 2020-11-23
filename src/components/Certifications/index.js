@@ -16,22 +16,30 @@ const Certifications = () => (
     <S.CertificationsList className="completed">
       {completedCourses.map((course, index) => (
         <S.CertificationsItem className="completed" key={`completed${index}`}>
-          <span className="course-name">{course.name}</span> - {" "}
-          <span className="plataform-name">{course.plataform}</span>
+          <p className="course">
+            <span className="course-name">{course.name}</span> -{" "}
+            <span className="plataform-name">{course.plataform}</span>
+          </p>
         </S.CertificationsItem>
       ))}
     </S.CertificationsList>
     <S.CertificationsList className="ongoing">
       {ongoingCourses.map((course, index) => (
         <S.CertificationsItem className="ongoing" key={`ongoing${index}`}>
-          <span className="course-name">{course.name} </span> - {" "}
-          <span className="plataform-name"> {course.plataform}</span>
+          <p className="course">
+            <span className="course-name">{`[${course.percentage}] ${course.name}`} - </span>
+            <span className="plataform-name"> {course.plataform}</span>
+          </p>
         </S.CertificationsItem>
       ))}
     </S.CertificationsList>
     <S.CertificationsSubtitle>
-        <S.CertificationsSubtitleItem className="completed">Concluído</S.CertificationsSubtitleItem>
-        <S.CertificationsSubtitleItem className="ongoing">Em Andamento</S.CertificationsSubtitleItem>
+      <S.CertificationsSubtitleItem className="completed">
+        Concluído
+      </S.CertificationsSubtitleItem>
+      <S.CertificationsSubtitleItem className="ongoing">
+        Em Andamento
+      </S.CertificationsSubtitleItem>
     </S.CertificationsSubtitle>
   </S.CertificationsWrapper>
 )
