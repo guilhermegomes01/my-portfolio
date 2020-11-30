@@ -7,7 +7,7 @@ const ongoingCourses = [
     {
         name: 'React Avançado: Crie aplicações com NextJS, GraphQL e mais.',
         plataform: 'Udemy',
-        percentage: '20%'
+        percentage: '30%'
     },
     {
         name: 'React e TypeScript: Desenvolvendo uma Dashboard',
